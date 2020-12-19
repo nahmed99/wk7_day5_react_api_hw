@@ -7,10 +7,20 @@ const Surah = ({ selectedSurah }) => {
         return null;
     }
 
-    console.log(selectedSurah);
+    // console.log(selectedSurah);
+    // console.log(typeof selectedSurah.number);
 
     return (
-        <p> {selectedSurah.name} {selectedSurah.englishName}</p>
+        <div className="surah-module">
+            <h3 className="surah-heading">{selectedSurah.number}. {selectedSurah.name}</h3>
+            <h4 className="surah-heading-en">{selectedSurah.englishName}</h4>
+            <br />
+            <p>Translated English Name: {selectedSurah.englishNameTranslation}</p>
+            <p>Number of Ayahs: {selectedSurah.numberOfAyahs}</p>
+            <p>Revelation: {selectedSurah.revelationType}</p>
+
+            
+        </div>
     );
 }
 

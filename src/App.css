@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.surah-module {
+  background-color: aquamarine;
+  font-size: 1.3em;
+  padding: 15px;
+  margin: 25px auto;
+  width: 500px;
+  border-radius: 15px;
+  border: 3px solid green;
+}
+
+.surah-heading, .surah-heading-en {
+  background-color: chartreuse;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 75px;
+  border: 10px;
+  justify-content: ;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

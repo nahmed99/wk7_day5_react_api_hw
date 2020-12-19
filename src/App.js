@@ -52,9 +52,10 @@ function App() {
   }
 
   // Identify the surah that was selected by the user.
-  console.log(selectedSurahNumber);
+  // console.log(selectedSurahNumber);
   const selectedSurah = surahs.find(surah => surah.number == selectedSurahNumber);
-  console.log(selectedSurah);
+  // console.log(selectedSurah);
+  // console.log(typeof selectedSurahNumber);
 
 
   return (
