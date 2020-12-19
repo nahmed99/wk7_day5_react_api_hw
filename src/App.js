@@ -59,11 +59,11 @@ function App() {
 
 
   return (
-    <>
-      <h1>Fetching Surahs...</h1>
+    <div style= {{backgroundImage: 'url("https://images.unsplash.com/photo-1540871112484-09beaca00ec2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1049&q=80")'}}>
+      <h1 className="main-heading">Surahs In The Holy Quran</h1>
       <SurahSelector theSurahs={surahs} onSurahSelected={handleUserSelected} />
       <Surah selectedSurah={selectedSurah} />
-    </>
+    </div>
   );
 }
 

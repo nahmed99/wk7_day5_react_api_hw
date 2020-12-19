@@ -18,12 +18,14 @@ const SurahSelector = ({ theSurahs, onSurahSelected }) => {
 
 
     return (
-        <select defaultValue="" onChange={handleChange}>
-            <option value="" disabled>Select Surah</option>
-            {theSurahs.map(surah => {
-                return <option  key={surah.number} value={surah.number}>{surah.number}. {surah.name} ({surah.englishName})</option>
-            })}
-        </select>
+        <div className="surah-selector-container">
+            <select className="surah-selector" defaultValue="" onChange={handleChange}>
+                <option value="" disabled>Select Surah</option>
+                {theSurahs.map(surah => {
+                    return <option  key={surah.number} value={surah.number}>{surah.number}. {surah.name} ({surah.englishName})</option>
+                })}
+            </select>
+        </div>
     );
 }
 

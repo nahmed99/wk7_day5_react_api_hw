@@ -15,9 +15,9 @@ const Surah = ({ selectedSurah }) => {
             <h3 className="surah-heading">{selectedSurah.number}. {selectedSurah.name}</h3>
             <h4 className="surah-heading-en">{selectedSurah.englishName}</h4>
             <br />
-            <p>Translated English Name: {selectedSurah.englishNameTranslation}</p>
-            <p>Number of Ayahs: {selectedSurah.numberOfAyahs}</p>
-            <p>Revelation: {selectedSurah.revelationType}</p>
+            <p><b>Translated English Name:</b> {selectedSurah.englishNameTranslation}</p>
+            <p><b>Number of Ayahs:</b> {selectedSurah.numberOfAyahs}</p>
+            <p><b>Revelation:</b> {selectedSurah.revelationType}</p>
 
             
         </div>
